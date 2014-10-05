@@ -24,4 +24,19 @@ public class DTGunts extends ApplicationAdapter {
 		batch.draw(img, 0, 0);
 		batch.end();
 	}
+	
+	@Override
+	public void pause() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void resume() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void dispose() {
+		// TODO Auto-generated method stub
+	}
 }
