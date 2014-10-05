@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1412528944439_3" label="DTGunts" name="DTGunts">
+<item elementID="=DTGunts-core" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=DTGunts-desktop" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1412518690605_0" label="Window Working Set" name="Aggregate for window 1412518690605"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1412520028735_1" label="Window Working Set" name="Aggregate for window 1412520028735"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1412522403273_2" label="Window Working Set" name="Aggregate for window 1412522403273"/>
