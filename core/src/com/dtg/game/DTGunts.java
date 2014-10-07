@@ -1,49 +1,77 @@
 package com.dtg.game;
 
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.dtg.game.sprites.AnimatedSprite;
 
-public class DTGunts extends ApplicationAdapter {
-	SpriteBatch batch;
-	Texture img;
+
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.graphics.FPSLogger;
+import com.dtg.screen.GameScreen;
+import com.dtg.screen.SplashScreen;
+
+
+public class DTGunts extends Game {
+
+	public static final String VERSION = "1.0";
+	public static final boolean DEBUG = false;
+	FPSLogger log;
 	
 	AnimatedSprite test = new AnimatedSprite();
 	
 	@Override
-	public void create () {
-		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
+	public void create() {
+		
+		log = new FPSLogger();
+		setScreen(new SplashScreen(this));
+		//setScreen(new GameScreen(this));
 		test.create();
 		
 	}
 
 	@Override
-	public void render () {
-		Gdx.gl.glClearColor(1, 0, 0, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		batch.begin();
-		batch.draw(img, 0, 0);
-		batch.end();
+	public void resize(int width, int height) {
+		super.resize(width, height);
 		
 		test.render();
 	}
+<<<<<<< HEAD
+
+	@Override
+	public void render() {
+		super.render();
+		log.log();
+	}
+
+	@Override
+	public void pause() {
+		super.pause();
+=======
 	
 	@Override
 	public void pause() {
 		// TODO Auto-generated method stub
+>>>>>>> FETCH_HEAD
 	}
 
 	@Override
 	public void resume() {
+<<<<<<< HEAD
+		super.resume();
+=======
 		// TODO Auto-generated method stub
+>>>>>>> FETCH_HEAD
 	}
 
 	@Override
 	public void dispose() {
+<<<<<<< HEAD
+		super.dispose();
+		
+	}
+
+
+}
+=======
 		// TODO Auto-generated method stub
 	}
 }
+>>>>>>> FETCH_HEAD
