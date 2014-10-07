@@ -1,6 +1,5 @@
 package com.dtg.game;
 
-import com.dtg.game.sprites.AnimatedSprite;
 
 
 import com.badlogic.gdx.Game;
@@ -15,25 +14,18 @@ public class DTGunts extends Game {
 	public static final boolean DEBUG = false;
 	FPSLogger log;
 	
-	AnimatedSprite test = new AnimatedSprite();
-	
 	@Override
 	public void create() {
 		
 		log = new FPSLogger();
 		setScreen(new SplashScreen(this));
 		//setScreen(new GameScreen(this));
-		test.create();
-		
 	}
 
 	@Override
 	public void resize(int width, int height) {
 		super.resize(width, height);
-		
-		test.render();
 	}
-<<<<<<< HEAD
 
 	@Override
 	public void render() {
@@ -44,34 +36,18 @@ public class DTGunts extends Game {
 	@Override
 	public void pause() {
 		super.pause();
-=======
-	
-	@Override
-	public void pause() {
-		// TODO Auto-generated method stub
->>>>>>> FETCH_HEAD
 	}
 
 	@Override
 	public void resume() {
-<<<<<<< HEAD
 		super.resume();
-=======
-		// TODO Auto-generated method stub
->>>>>>> FETCH_HEAD
 	}
 
 	@Override
 	public void dispose() {
-<<<<<<< HEAD
 		super.dispose();
 		
 	}
 
 
 }
-=======
-		// TODO Auto-generated method stub
-	}
-}
->>>>>>> FETCH_HEAD
