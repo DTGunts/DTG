@@ -44,18 +44,19 @@ project(":desktop") {
 }
 
 project(":core") {
-    apply plugin: "java"
+	apply plugin: "java"
 
 
-    dependencies {
-        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-bullet:$gdxVersion"
-        compile "com.badlogicgames.box2dlights:box2dlights:1.2"
-        compile "com.badlogicgames.ashley:ashley:1.1.0"
-        compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
-    }
+	dependencies {
+		compile fileTree(dir: '../lib', include: '*.jar')
+		compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+		compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+		compile "com.badlogicgames.gdx:gdx-bullet:$gdxVersion"
+		compile "com.badlogicgames.box2dlights:box2dlights:1.2"
+		compile "com.badlogicgames.ashley:ashley:1.1.0"
+		compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+		compile "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
+	}
 }
 
 project(":html") {
