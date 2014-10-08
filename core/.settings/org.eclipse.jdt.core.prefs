@@ -1,5 +1,9 @@
 #
+<<<<<<< HEAD
 #Tue Oct 07 18:37:27 EDT 2014
+=======
+#Tue Oct 07 18:58:40 EDT 2014
+>>>>>>> FETCH_HEAD
 org.eclipse.jdt.core.compiler.debug.localVariable=generate
 org.eclipse.jdt.core.compiler.compliance=1.6
 org.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve
